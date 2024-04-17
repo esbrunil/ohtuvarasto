@@ -45,14 +45,14 @@ class TestVarasto(unittest.TestCase):
         self.varasto.lisaa_varastoon(varastossa_tilaa)
         self.varasto.lisaa_varastoon(1)
         self.assertAlmostEqual(self.varasto.saldo, 10)
-        
+
     def test_varastoon_poista_liikaa_tavaraa(self):
         varastossa_tilaa = self.varasto.paljonko_mahtuu()
         self.varasto.lisaa_varastoon(varastossa_tilaa)
         self.varasto.ota_varastosta(varastossa_tilaa)
         self.varasto.ota_varastosta(1)
         self.assertAlmostEqual(self.varasto.saldo, 0)
-        
+
     def test_ota_varastota_negatiivinen_maara(self):
         varastossa_tilaa = self.varasto.paljonko_mahtuu()
         self.varasto.lisaa_varastoon(varastossa_tilaa)
