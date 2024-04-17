@@ -18,7 +18,7 @@ disable=raw-checker-failed,
 
 
 [BASIC]
-const-naming-style=UPPER_CASE
+max-bool-expr=4
 
 [FORMAT]
 max-line-length=80
