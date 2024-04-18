@@ -1,8 +1,10 @@
 [MASTER]
 
-ignore=tests
+ignore=tests,
+        index.py
 
 [MESSAGE CONTROL]
+
 
 disable=raw-checker-failed,
         bad-inline-option,
@@ -28,3 +30,4 @@ max-nested-blocks=2
 
 [DESIGN]
 max-statements=15
+
